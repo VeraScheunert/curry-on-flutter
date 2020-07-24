@@ -7,43 +7,55 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
      backgroundColor: Color(0xfff4f3ed),
-     body: SafeArea(
-            child: Column(
-         children: [
-            Text("CURRYON!", style: TextStyle(
-              fontSize: 40,
-              fontFamily: 'Marbre',
-              )),
-            SizedBox(
-              height: 20,
-            ),
-            Text("A story game for Wurst-Ethusiasts", 
-              style: TextStyle(
-                fontSize: 28,
+     body: Container(
+             margin: EdgeInsets.all(40),
+            child: SafeArea(
+              child: Column(
+                children: [
+              Text("CURRYON!", style: TextStyle(
+                fontSize: 40,
+                fontFamily: 'Marbre',
+                )),
+              SizedBox(
+                height: 20,
               ),
-              textAlign: TextAlign.center,
-            ),
-            Row(
-              children: [
-                Image.asset('assets/images/butler.png'),
-                SizedBox(
-                  width: 20
+              Text("A story game for Wurst-Ethusiasts", 
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Marbre',
                 ),
-                Flexible(
-                  child: Text(
-                    'Experience every bite of Manfred’s currywurst love story by completing a series of photo-challenges and evoke the drama!!!'
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Image.asset('assets/images/butler.png'),
+                  SizedBox(
+                    width: 20
+                  ),
+                  Flexible(
+                    child: Text(
+                      'Experience every bite of Manfred’s currywurst love story by completing a series of photo-challenges and evoke the drama!!!', 
+                      style: TextStyle(
+                        fontSize: 18, 
+                      ),
+                      textAlign: TextAlign.justify 
+                    )
                   )
-                )
-            ],
-          ),
-          Text("6 Challenges to take"), 
-          SizedBox(height: 10,),
-          Text("3 Chapters to reveal"), 
-          SizedBox(height: 10,),
-          Text("Shall We?") ,
-          SizedBox(height: 10,),
-          CustomButton() 
-        ],
+              ],
+            ),
+            SizedBox(height: 30,),
+            Text("6 Challenges to take", style: TextStyle(fontSize: 18, letterSpacing: 2.5),), 
+            SizedBox(height: 10,),
+            Text("3 Chapters to reveal", style: TextStyle(fontSize: 18, letterSpacing: 2.5),), 
+            SizedBox(height: 40,),
+            Text("Shall We?", style: TextStyle(fontSize: 18),) ,
+            SizedBox(height: 10,),
+            CustomButton() 
+          ],
+         ),
        ),
      )
    );
