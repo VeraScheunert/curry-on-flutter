@@ -10,8 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: "Bellefair"),
-      home: HomePage(
-      ),
+      home: HomePage(),
     );
   }
 }

@@ -7,15 +7,25 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
      backgroundColor: Color(0xfff4f3ed),
+      appBar: AppBar(
+        backgroundColor: Color(0xfff4f3ed),
+       actions: <Widget>[
+         IconButton(
+           icon: Icon(Icons.menu), onPressed: () {  },
+         ),
+        ],
+      ),
      body: Container(
              margin: EdgeInsets.all(40),
             child: SafeArea(
               child: Column(
                 children: [
-              Text("CURRYON!", style: TextStyle(
-                fontSize: 40,
-                fontFamily: 'Marbre',
-                )),
+              Text("CURRYON!", style: 
+                TextStyle(
+                  fontSize: 40,
+                  fontFamily: 'Marbre',
+                )
+              ),
               SizedBox(
                 height: 20,
               ),
