@@ -1,6 +1,6 @@
 # CurryOn! - Flutter Version
 
-<img src="src/assets/images/KONIEC0.png" width="200">
+<img src="assets/images/KONIEC0.png" width="200">
 
 ## Flutter
 
