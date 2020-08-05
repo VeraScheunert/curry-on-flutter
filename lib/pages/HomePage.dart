@@ -7,12 +7,22 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
      backgroundColor: Color(0xfff4f3ed),
-      appBar: AppBar(
-        backgroundColor: Color(0xfff4f3ed),
-       actions: <Widget>[
-         IconButton(
-           icon: Icon(Icons.menu), onPressed: () {  },
-         ),
+     bottomNavigationBar: BottomNavigationBar(
+       backgroundColor: Color(0xfff4f3ed),
+        type: BottomNavigationBarType.fixed,
+       items: [
+          BottomNavigationBarItem(
+            title: Text('Story'),
+            icon: Icon(Icons.home),
+          ),
+          BottomNavigationBarItem(
+            title: Text('Profile'),
+            icon: Icon(Icons.account_circle),
+          ),
+          BottomNavigationBarItem(
+            title: Text('Logout'),
+            icon: Icon(Icons.exit_to_app),
+          ),
         ],
       ),
      body: Container(
