@@ -73,7 +73,7 @@ class HomePage extends StatelessWidget{
             SizedBox(height: 40,),
             Text("Shall We?", style: TextStyle(fontSize: 18),) ,
             SizedBox(height: 10,),
-            CustomButton() 
+            CustomButton();
           ],
          ),
        ),

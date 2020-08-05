@@ -7,9 +7,7 @@ class CustomButton extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return FlatButton(
-      onPressed: (){
-        print("Under Construction");
-      }, 
+      onPressed:(){Navigator.pushNamed(context,'/chapter1')},
       child: Text("START"), 
       color: Colors.grey
     ); 
