@@ -4,7 +4,7 @@ import 'package:route_flutter_app/Chapter1.dart';
 
 void main() {
   runApp(MyApp());
-} 
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       initialRoute: "/",
       routes: {
-        '/':(context) => HomePage(),
-        '/chapter1':(context) => Chapter1()
+        '/': (context) => HomePage(),
+        '/chapter1': (context) => Chapter1()
       }
-    ),
+    );
   }
 }
