@@ -89,7 +89,20 @@ class HomePage extends StatelessWidget {
                 CustomButton()
               ],
             ),
-          ),
-        ));
+
+            SizedBox(height: 30,),
+            Text("6 Challenges to take", style: TextStyle(fontSize: 18, letterSpacing: 2.5),), 
+            SizedBox(height: 10,),
+            Text("3 Chapters to reveal", style: TextStyle(fontSize: 18, letterSpacing: 2.5),), 
+            SizedBox(height: 40,),
+            Text("Shall We?", style: TextStyle(fontSize: 18),) ,
+            SizedBox(height: 10,),
+            CustomButton()
+          ],
+         ),
+       )
+     )
+   );
+
   }
 }

@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: "Bellefair"),
-      home: HomePage(),
-      initialRoute: "/",
-      routes: {
-        '/': (context) => HomePage(),
-        '/chapter1': (context) => Chapter1()
-      }
-    );
+        theme: ThemeData(fontFamily: "Bellefair"),
+        home: HomePage(),
+        initialRoute: "/",
+        routes: {
+          '/': (context) => HomePage(),
+          '/chapter1': (context) => Chapter1()
+        });
+
   }
 }
